@@ -67,13 +67,19 @@ body {
 }
 
 .image-head {
-    display: flex;
-    justify-content: center;
+    /* width:300px;
+    height:200px;
+    border:1px solid #ccc; */
+    padding: 80px;
+    display:flex;
+    justify-content:center; /* horizontal */
+    align-items:center;     /* vertical */
+    
 
 }
 
 .image-head img {
-    width: 90%;
+    width: 100%;
 }
 
 .btn-outlined {
@@ -185,10 +191,14 @@ body {
 
 .content-data {
     padding: 20px;
+    display: block;
 }
 
 .cd-item{
-    padding : 20px;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center
 }
 
 .cd-item-product{
@@ -198,8 +208,9 @@ body {
 .cd-item-product{
     padding : 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap:20px;
+    width: 92%;
 }
 
 .cdi-card {
@@ -212,17 +223,20 @@ body {
     padding: 10px;
     border-radius: 13px;
     box-shadow: 0 7px 14px rgba(2, 114, 162, 0.364);
+    scale: 1.05;
     transition: 300ms ease;
 }
 
 .cdic-image{
+    display: flex;
+    justify-content: center;
     padding : 20px;
-    min-height: 200px;
-    max-height: 400px;
+    min-height: 100px;
+    height: 300px;
 }
 
 .cdic-image img{
-    max-height: 400px;
+    width: 300px;
 }
 
 .cdic-title{
@@ -230,6 +244,11 @@ body {
     font-size: 18px;
     text-align: center;
     font-weight: 600;
+}
+
+.cdic-foot{
+    display: flex;
+    justify-content: space-between;
 }
 
 .cdic-author{
@@ -242,4 +261,58 @@ body {
     padding : 20px;
     font-size: 18px;
     text-align: right;
+    font-weight: 600;
 }
+
+.cdic-button{
+    display: block;
+}
+
+.cdic-button button{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    border : 1px solid;
+    font-weight: 600;
+    background-color: #00000000;
+}
+
+.cdic-button button:hover{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border : 1px solid;
+    font-weight: 600;
+    color : #fff;
+    background-color: #000000;
+}
+
+.split-detail {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.breadcrumb{
+    display: block;
+    width: 90%;
+}
+
+.detail-head {
+    width: 90%;
+}
+
+.breadcrumb ul li{
+    display: inline;
+    color: #7e7e7e;
+}
+
+.breadcrumb ul li.active{
+    display: inline;
+    color: #181818;
+}
+
+.image-detail img{
+    width: 40%;
+}
+

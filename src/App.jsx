@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useState , Fragment } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import { BrowserRouter } from 'react-router'
+import RoutePath from './RoutePath'
 
 
 import Home from './Home'
@@ -11,7 +13,12 @@ function App() {
 
   return (
     <>
-      <Home/>
+      {/* <Home/> */}
+      <Fragment>
+        <BrowserRouter>
+          <RoutePath />
+        </BrowserRouter>
+      </Fragment>
     </>
   )
 }

@@ -189,11 +189,18 @@ function Home(){
                                     <div className="cdic-title">
                                         {v.title}
                                     </div>
-                                    <div className="cdic-author">
-                                        {v.author}
+                                    <div className="cdic-foot">
+                                        <div className="cdic-author">
+                                            {v.author}
+                                        </div>
+                                        <div className="cdic-price">
+                                            Rp. {numberFormat(v.harga)}
+                                        </div>
                                     </div>
-                                    <div className="cdic-price">
-                                        Rp. {numberFormat(v.harga)}
+                                    <div className="cdic-button">
+                                        <button className="but-main">
+                                            <i className="fas fa-cart-plus"></i> Add to chart
+                                        </button>
                                     </div>
                                 </div>
                             ))}
