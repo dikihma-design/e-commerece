@@ -1,163 +1,245 @@
 * {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-            body {
-                padding-top: 50px;
-            }
-            .navbar {
-                background-color: #ffffff;
-                display: flex;
-                width: 100%;
-                position: fixed;
-                flex-shrink: 0;
-                justify-content: space-between;
-                color: #000000;
-                height: 50px;
-                padding: 10px;
-                left : 0;
-                right: 0;
-                top : 0;
-            }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-            .nav-left {
-                align-content: center;
-            }
+body {
+    padding-top: 50px;
+}
 
-            .nav-right {
-                justify-self: center;
-                justify-content: center;
-                align-content: center;
-                
-            }
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    flex-shrink: 0;
+    justify-content: space-between;
+    color: #000000;
+    height: 50px;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
 
-            .menu-right {
-                justify-self: center;
-                justify-content: center;
-                align-content: center;
-                padding: 10px;
-                
-            }
+.nav-left {
+    align-content: center;
+}
 
-            
+.nav-right {
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
 
-            .nav-menu ul li{
-                display: inline;
-                margin : 0px 0px;
-                padding :5px;
-            }
+}
 
-            .nav-menu ul li a{
-                
-                text-decoration: none;
-                color: #000000;
-                padding :15px;
-                border-radius: 10px;
-            }
+.menu-right {
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
 
-            .nav-menu ul li a:hover{
-                
-                text-decoration: none;
-                color: #fff;
-                padding :15px;
-                background-color: #6e78cc;
-                border-radius: 10px;
-                transition: 400ms ease;
-            }
+}
 
-            .image-head {
-                display: flex;
-                justify-content: center;
-                
-            }
 
-            .image-head img {
-                width: 90%;
-            }
 
-            .btn-outlined {
-                color: #000000;
-                background-color: #e6dcdc;
-                border-radius: 15px;
-                border: 1px solid;
-                border-color: #92929200;
-                padding: 10px;
-            }
+.nav-menu ul li {
+    display: inline;
+    margin: 0px 0px;
+    padding: 5px;
+}
 
-            .btn-outlined:hover {
-                color: #000000;
-                background-color: #cac3c3;
-                border-radius: 15px;
-                border: 1px solid;
-                border-color: #92929200;
-                padding: 10px;
-            }
+.nav-menu ul li a {
 
-            .btn-outlined.active {
-                color: #000000;
-                background-color: #cac3c3;
-                border-radius: 15px;
-                border: 1px solid;
-                border-color: #92929200;
-                padding: 10px;
-            }
-            .arrow {
-                border: solid currentColor;
-                border-width: 0 1px 1px 0;
-                margin: 2px 5px;
-                display: inline-block;
-                padding: 2px;
-            }
-            .right { transform: rotate(-45deg); }
-            .left { transform: rotate(135deg); }
-            .up { transform: rotate(-135deg); }
-            .down { transform: rotate(45deg); }
-            .dropdown-btn{
-                max-width: fit-content;
-            }
-            .dropdown-item{
-                
-                border-radius: 4px;
-                padding: 3px;
-                background-color: #d3d3d3;
-            }
-            .dropdown-item ul{
-                /* list-style: none; */
-            }
-            
-            .dropdown-item a{
-                display: block;
-                text-decoration: none;
-                color: #000000;
-                padding: 5px;
-                margin: 5px;
-                border-radius: 3px;
-            }
+    text-decoration: none;
+    color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+}
 
-            .dropdown-item a:hover{
-                display: block;
-                text-decoration: none;
-                color: #000000;
-                background-color: #8f8d8d;
-                border-radius: 3px;
-            }
+.nav-menu ul li a:hover {
 
-            .hide {
-                display: none;
-            }
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    background-color: #6e78cc;
+    border-radius: 10px;
+    transition: 400ms ease;
+}
 
-            .content-filter {
-                padding: 20px 88px;
-                display: flex;
-                justify-content: space-between;
-            }
-            .cf-right {
-                display: flex;
-                gap: 5px;
-                
-                padding: 10px 2px;
-            }
-            .transparent {
-                color: #000000;
-                border-color: #000000;
-                background-color: #00000000;
-            }
+.image-head {
+    display: flex;
+    justify-content: center;
+
+}
+
+.image-head img {
+    width: 90%;
+}
+
+.btn-outlined {
+    color: #000000;
+    background-color: #e6dcdc;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #92929200;
+    padding: 10px;
+}
+
+.btn-outlined:hover {
+    color: #000000;
+    background-color: #cac3c3;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #92929200;
+    padding: 10px;
+}
+
+.btn-outlined.active {
+    color: #000000;
+    background-color: #cac3c3;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #92929200;
+    padding: 10px;
+}
+
+.arrow {
+    border: solid currentColor;
+    border-width: 0 1px 1px 0;
+    margin: 2px 5px;
+    display: inline-block;
+    padding: 2px;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+}
+
+.dropdown-btn {
+    max-width: fit-content;
+}
+
+.dropdown-item {
+
+    border-radius: 4px;
+    padding: 3px;
+    background-color: #d3d3d3;
+}
+
+.dropdown-item ul {
+    /* list-style: none; */
+}
+
+.dropdown-item a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.dropdown-item a:hover {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    background-color: #8f8d8d;
+    border-radius: 3px;
+}
+
+.hide {
+    display: none;
+}
+
+.content-filter {
+    padding: 20px 88px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cf-right {
+    display: flex;
+    gap: 5px;
+
+    padding: 10px 2px;
+}
+
+.transparent {
+    color: #000000;
+    border-color: #000000;
+    background-color: #00000000;
+}
+
+
+.content-data {
+    padding: 20px;
+}
+
+.cd-item{
+    padding : 20px;
+}
+
+.cd-item-product{
+    padding : 20px;
+}
+
+.cd-item-product{
+    padding : 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+}
+
+.cdi-card {
+    padding: 10px;
+    border-radius: 13px;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+}
+
+.cdi-card:hover {
+    padding: 10px;
+    border-radius: 13px;
+    box-shadow: 0 7px 14px rgba(2, 114, 162, 0.364);
+    transition: 300ms ease;
+}
+
+.cdic-image{
+    padding : 20px;
+    min-height: 200px;
+    max-height: 400px;
+}
+
+.cdic-image img{
+    max-height: 400px;
+}
+
+.cdic-title{
+    padding : 20px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cdic-author{
+    padding : 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.cdic-price{
+    padding : 20px;
+    font-size: 18px;
+    text-align: right;
+}
