@@ -9,6 +9,7 @@ function RoutePath() {
             <Route path="/" exact Component={Home}/>
             <Route path="/products/:id" exact Component={ProductDetail}/>
             
+            
         </Routes>
     )
     

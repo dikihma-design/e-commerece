@@ -85,7 +85,7 @@ function DetailProduct(){
             title : 'Moon',
             author : 'Tere Liye',
             harga : 110000
-        }
+        }, 
     ])
 
     const toggleDropDown = (code) => {
