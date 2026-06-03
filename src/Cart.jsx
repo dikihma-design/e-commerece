@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { Link } from "react-router";
 import "./shopcart.css";
 
 /* ════════════════════════════════
@@ -460,14 +461,14 @@ export default function Cart() {
                 </div>
 
                 {/* Checkout button */}
-                <a
-                  href="#"
+                <Link
+                  to={`/checkout`}
                   style={checkoutBtn}
                   onMouseEnter={(e) => (e.currentTarget.style.background = "var(--green-mid)")}
                   onMouseLeave={(e) => (e.currentTarget.style.background = "var(--green-dark)")}
                 >
                   <i className="fa fa-lock me-2" />Proceed to Checkout
-                </a>
+                </Link>
 
                 {/* PayPal alternative */}
                 <button style={paypalBtn}

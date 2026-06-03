@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 export default function Header() {
   const [cartCount] = useState(3);
@@ -75,11 +76,11 @@ export default function Header() {
             <a href="#">
               <i className="fa fa-user-o fa-lg" /> Account
             </a>
-            <a href="#" className="position-relative">
+            <Link to={`/cart`} className="position-relative">
               <i className="fa fa-shopping-cart fa-lg" />
               <span className="cart-badge">{cartCount}</span>
               Cart
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
